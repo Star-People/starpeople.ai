@@ -60,7 +60,7 @@ main{width:100%;max-width:none}section{display:block;align-items:normal;padding:
 .hero-copy>.intro{margin-bottom:28px}
 
 /* Night-sky texture inside the intro heading. */
-@supports ((background-clip:text) or (-webkit-background-clip:text)){.hero-copy h1{background-image:var(--stars-image);background-size:cover;background-position:center;background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent}}
+@supports ((background-clip:text) or (-webkit-background-clip:text)){.hero-copy h1,.setup-intro h1{background-image:var(--stars-image);background-size:cover;background-position:center;background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent}}
 
 .hero-copy h1{background-size:auto 180%;background-position:center center}
 
