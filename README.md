@@ -46,6 +46,6 @@ deployed for the public snapshot to change.
 
 Background photographs use resized WebP assets with smaller mobile variants.
 Detection crops retain their original pixel dimensions and use lossless WebP
-only when smaller than the original. The archive video uses a direct media source and native playback controls, so
-it remains playable without JavaScript. Automatic playback respects reduced-motion
+only when smaller than the original. The archive video uses a direct media source for silent, inline autoplay without
+visible controls or a JavaScript loading dependency. Automatic playback respects reduced-motion
 preferences when JavaScript is available.
