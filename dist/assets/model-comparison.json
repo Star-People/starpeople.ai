@@ -1,0 +1,66 @@
+{
+  "evaluated_at": "2026-11-14T13:37:00.455214-08:00",
+  "scope": "All eligible reviewed training examples, the exact full-color review box; not unseen-footage accuracy.",
+  "example_count": 105604,
+  "models": [
+    {
+      "lane": "experimental",
+      "name": "Human-curated",
+      "detail": "Experimental settings",
+      "score": 87.2,
+      "recall": 0.9279588336192109,
+      "precision": 0.6796482412060302,
+      "accuracy": 0.9943752130601113,
+      "false_positive_rate": 0.004883280032172199,
+      "version": "185750ddef1dd230761e83b84aaca5482cdcba0aa573f190634f154890650ebf",
+      "settings_revision": 2,
+      "rank": 1
+    },
+    {
+      "lane": "human",
+      "name": "Human-curated",
+      "detail": "Stable settings",
+      "score": 84.6,
+      "recall": 0.9519725557461407,
+      "precision": 0.6072210065645515,
+      "accuracy": 0.992670732169236,
+      "false_positive_rate": 0.0068748922805875745,
+      "version": "185750ddef1dd230761e83b84aaca5482cdcba0aa573f190634f154890650ebf",
+      "settings_revision": 1,
+      "rank": 2
+    },
+    {
+      "lane": "hybrid",
+      "name": "Hybrid",
+      "detail": "Human + machine labels",
+      "score": 64.4,
+      "recall": 0.8190394511149228,
+      "precision": 0.34803206997084546,
+      "accuracy": 0.9810613234347184,
+      "false_positive_rate": 0.01712978034814916,
+      "version": "3c13c5667eb634b2a25a122f5ed0e476434fd899d3fabde020d844e32be429af",
+      "settings_revision": 1,
+      "rank": 3
+    },
+    {
+      "lane": "machine",
+      "name": "Machine-only",
+      "detail": "Machine-generated labels",
+      "score": 23.1,
+      "recall": 0.4391080617495712,
+      "precision": 0.08037676609105181,
+      "accuracy": 0.938335669103443,
+      "false_positive_rate": 0.05609069495777397,
+      "version": "7388e1930ea28451e1f3ce5be401cc6e74ad5f83c54debaac8fd28340a357d36",
+      "settings_revision": 1,
+      "rank": 4
+    }
+  ],
+  "scoring": {
+    "method": "weighted harmonic mean",
+    "recall": 0.35,
+    "precision": 0.25,
+    "specificity": 0.25,
+    "accuracy": 0.15
+  }
+}

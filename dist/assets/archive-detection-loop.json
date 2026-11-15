@@ -1,0 +1,14 @@
+{
+  "review_id": "fbd7ff04bb6a76a209167eb5b3ad8171",
+  "start_seconds": 3.005,
+  "duration_seconds": 6.9,
+  "crop": "480:360:1200:40",
+  "output_size": [
+    720,
+    540
+  ],
+  "audio": false,
+  "speed": 1,
+  "archive_url": "https://archive.org/details/ufo-files-station-1fe259-20261106t021933z-b3ccb7",
+  "boxes": "Saved human-review bounds, linearly interpolated between reviewed timestamps"
+}
