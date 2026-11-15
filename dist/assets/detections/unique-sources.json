@@ -20,7 +20,7 @@
     "human_reviewed": true,
     "starred": true,
     "archive_url": "https://archive.org/details/ufo-files-station-1fe259-20261109t055638z-c567e4",
-    "file": "97dc85dd5057e54deda8b554e91d6c42.jpg",
+    "file": "97dc85dd5057e54deda8b554e91d6c42.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=97dc85dd5057e54deda8b554e91d6c42&annotation=97dc85dd5057e54deda8b554e91d6c42",
     "sha256": "94f1fc27bf663f2876bcbbf4d998bba5302e1566c4e9919bcd546e85cd66976b",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -33,7 +33,7 @@
     "human_reviewed": true,
     "starred": true,
     "archive_url": "https://archive.org/details/ufo-files-station-1fe259-20261109t055638z-c567e4",
-    "file": "b3af6f469cb80770aa58e5b0e0005f35.jpg",
+    "file": "b3af6f469cb80770aa58e5b0e0005f35.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=b3af6f469cb80770aa58e5b0e0005f35&annotation=b3af6f469cb80770aa58e5b0e0005f35",
     "sha256": "9f60cbcad2d691681a031f6c3b8b67537440e6f02974bae772f90e4b3cffe689",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -59,7 +59,7 @@
     "human_reviewed": true,
     "starred": true,
     "archive_url": "https://archive.org/details/ufo-files-station-1fe259-20261109t061119z-ac7c45",
-    "file": "133df5fe6f14db205f6e6d1497d88192.jpg",
+    "file": "133df5fe6f14db205f6e6d1497d88192.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=133df5fe6f14db205f6e6d1497d88192&annotation=133df5fe6f14db205f6e6d1497d88192",
     "sha256": "032377b658f83073556fd961bc27b112e8f57b3a0e0e1861dc96a2ce2cbbc0f9",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -72,7 +72,7 @@
     "human_reviewed": true,
     "starred": true,
     "archive_url": "https://archive.org/details/ufo-files-station-1fe259-20261109t061239z-e441e7",
-    "file": "b61d88e45ddd39606e58b3b088f8ecef.jpg",
+    "file": "b61d88e45ddd39606e58b3b088f8ecef.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=b61d88e45ddd39606e58b3b088f8ecef&annotation=b61d88e45ddd39606e58b3b088f8ecef",
     "sha256": "5cf71e87ded384fe49e05f4496124756d84156349ce9f946306f2bc154d3d4b6",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -85,7 +85,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "c4afd6093e0a4e7d9d07cf07185004ab.png",
+    "file": "c4afd6093e0a4e7d9d07cf07185004ab.png.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=30cb10b2d916a6e3e773ff94750633ce&annotation=c4afd6093e0a4e7d9d07cf07185004ab",
     "sha256": "20a177727c6e92e07f8883e451d83956677bed13e97ea697f7821410d542c7a4",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -98,7 +98,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "8a348f5a61234991a91f003b7d14798f.png",
+    "file": "8a348f5a61234991a91f003b7d14798f.png.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=30cb10b2d916a6e3e773ff94750633ce&annotation=8a348f5a61234991a91f003b7d14798f",
     "sha256": "cfd4bc827804e85c3e4384552658e281da8f6e2ac1c7a35cdd9e4288a634b26b",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -111,7 +111,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "34faf8065af3fb7e9873e1962227d2dc.jpg",
+    "file": "34faf8065af3fb7e9873e1962227d2dc.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=34faf8065af3fb7e9873e1962227d2dc&annotation=34faf8065af3fb7e9873e1962227d2dc",
     "sha256": "d94698bae532a19da9657e1a51d14fea0381534313931c6a9fb974678633d722",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -124,7 +124,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "8c60340e80275d25d52d3267eab2db49.jpg",
+    "file": "8c60340e80275d25d52d3267eab2db49.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=8c60340e80275d25d52d3267eab2db49&annotation=8c60340e80275d25d52d3267eab2db49",
     "sha256": "8d2ce15daaa4c0991053f313fbab8f8b44e2a0bf7ef5d74a605fd1ca533e5cb7",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -150,7 +150,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "d521d83f09c33b856fd0a9f88a2b655b.jpg",
+    "file": "d521d83f09c33b856fd0a9f88a2b655b.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=d521d83f09c33b856fd0a9f88a2b655b&annotation=d521d83f09c33b856fd0a9f88a2b655b",
     "sha256": "ac6f97d2d813281764f753f2a122f2d002431eaaf1411fe916a8bdd99fa9f380",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -163,7 +163,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "4540c03caee5475dba94913505f8c053.png",
+    "file": "4540c03caee5475dba94913505f8c053.png.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=863ff2be5ea67717dedd15b23baede65&annotation=4540c03caee5475dba94913505f8c053",
     "sha256": "4364da051d31d50a55f8bb25d95e426ab6fa7343f5ab508be5489ad3af546113",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -176,7 +176,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "6dc0198cf0f9eb2bae2600a7927880b9.jpg",
+    "file": "6dc0198cf0f9eb2bae2600a7927880b9.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=6dc0198cf0f9eb2bae2600a7927880b9&annotation=6dc0198cf0f9eb2bae2600a7927880b9",
     "sha256": "2b067fa9affd2cce40c8a21b1ac9c178454c6197e2994ca4435b1b9fffd9d9e9",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -189,7 +189,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "8c9b81373a864ba0b86fba56731a4d77.png",
+    "file": "8c9b81373a864ba0b86fba56731a4d77.png.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=0079a8e9bcf54f0c856aa50cd770c4a4&annotation=8c9b81373a864ba0b86fba56731a4d77",
     "sha256": "65577c291f7a1b53e61c3c99855fd8c9521c01d7affb8ae145e9765b1c090ca5",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -202,7 +202,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "62b2747e050f46f3b41de7e2b93e3c0b.png",
+    "file": "62b2747e050f46f3b41de7e2b93e3c0b.png.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=57f9adb67ead539afad747404082bd51&annotation=62b2747e050f46f3b41de7e2b93e3c0b",
     "sha256": "0634654a41a3fad75a59cca190be7273e88d4a433ef719895ff9dd95d2ac953e",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -215,7 +215,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "cbe038f52d9a54d5a5ff7d1bf95f6537.jpg",
+    "file": "cbe038f52d9a54d5a5ff7d1bf95f6537.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=cbe038f52d9a54d5a5ff7d1bf95f6537&annotation=cbe038f52d9a54d5a5ff7d1bf95f6537",
     "sha256": "d946171ff95d50f92548e1f53481dceb956f4094aeddd92f2e30b09e9cc59faf",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -228,7 +228,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "b9932532cc2f466676bc4747f5e3324d.jpg",
+    "file": "b9932532cc2f466676bc4747f5e3324d.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=b9932532cc2f466676bc4747f5e3324d&annotation=b9932532cc2f466676bc4747f5e3324d",
     "sha256": "ec4be985eb938cc57a0909feb146ada771fdbee5accfded4520a797592b57374",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -241,7 +241,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "d743b0611f6eb8850d2a0aae1eadd8ea.jpg",
+    "file": "d743b0611f6eb8850d2a0aae1eadd8ea.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=d743b0611f6eb8850d2a0aae1eadd8ea&annotation=d743b0611f6eb8850d2a0aae1eadd8ea",
     "sha256": "4506580c2e2a257291f261663218cf7c1b24c83682fd4ebbb069bb1d68c75748",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -254,7 +254,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "14c426658e931874eb19a2aecad601a1.jpg",
+    "file": "14c426658e931874eb19a2aecad601a1.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=14c426658e931874eb19a2aecad601a1&annotation=14c426658e931874eb19a2aecad601a1",
     "sha256": "b2788876571a3ac732dd3b43b58c77744f21707b2cedd6c136039f21f092ee53",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -267,7 +267,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "36a676592d73f533ed09388462d92cf2.jpg",
+    "file": "36a676592d73f533ed09388462d92cf2.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=36a676592d73f533ed09388462d92cf2&annotation=36a676592d73f533ed09388462d92cf2",
     "sha256": "4d0fd8441dd335054a8c4066efcff6578c1d660ff04ae4207001db7424d9c2c1",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -280,7 +280,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "25c51702876897cc5d6b795d71befb94.jpg",
+    "file": "25c51702876897cc5d6b795d71befb94.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=25c51702876897cc5d6b795d71befb94&annotation=25c51702876897cc5d6b795d71befb94",
     "sha256": "2e7398d7255b6a54b50af6c74f006e9dfb196134dae5f37cf8069828091a65f3",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -306,7 +306,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "e814312f7b7ade52b96eebf15bc00244.jpg",
+    "file": "e814312f7b7ade52b96eebf15bc00244.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=e814312f7b7ade52b96eebf15bc00244&annotation=e814312f7b7ade52b96eebf15bc00244",
     "sha256": "4db35d25d7ca6aae64e66b8c9c25a467a7e69f1ef637432535ca4b78e0af8009",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -319,7 +319,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "35694ad261899a132f2e6e51189c0ed7.jpg",
+    "file": "35694ad261899a132f2e6e51189c0ed7.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=35694ad261899a132f2e6e51189c0ed7&annotation=35694ad261899a132f2e6e51189c0ed7",
     "sha256": "ce6a44bd31e8e1775bb8906ee030a5aa4310b295922d529bbb8985c81599c0cc",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -332,7 +332,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "5fbefa6e5dd066e5916ab5ed2db9d5a8.jpg",
+    "file": "5fbefa6e5dd066e5916ab5ed2db9d5a8.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=5fbefa6e5dd066e5916ab5ed2db9d5a8&annotation=5fbefa6e5dd066e5916ab5ed2db9d5a8",
     "sha256": "5473747987ac364449222245bf42489f34048638439a14f64997a11a8c3ecf4b",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -345,7 +345,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "6c0c9992b6bb89509f996165183708ac.jpg",
+    "file": "6c0c9992b6bb89509f996165183708ac.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=6c0c9992b6bb89509f996165183708ac&annotation=6c0c9992b6bb89509f996165183708ac",
     "sha256": "c12de07de9757029bceee7d530046e9bc42b4b66cf6f1f20621678ecd7f7ca2f",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -358,7 +358,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "6bde3bd82ff5f5fbb5095a9ccf704161.jpg",
+    "file": "6bde3bd82ff5f5fbb5095a9ccf704161.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=6bde3bd82ff5f5fbb5095a9ccf704161&annotation=6bde3bd82ff5f5fbb5095a9ccf704161",
     "sha256": "01addf7b211556b3b01fc3393d775bbf7391cd42d7fae1940b7f87b38f407867",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -384,7 +384,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "053d55a7044b6837a64e17816363359c.jpg",
+    "file": "053d55a7044b6837a64e17816363359c.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=053d55a7044b6837a64e17816363359c&annotation=053d55a7044b6837a64e17816363359c",
     "sha256": "66dbe68f174178a41fdc66b350d601df8462867a17850ad923465185cbfddf2c",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -397,7 +397,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "73513e65e6ae52a4f93c750c2fda65f4.jpg",
+    "file": "73513e65e6ae52a4f93c750c2fda65f4.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=73513e65e6ae52a4f93c750c2fda65f4&annotation=73513e65e6ae52a4f93c750c2fda65f4",
     "sha256": "5205530d24a4d227a344765f7b21368fce70e4b7d4058a87308aa2d97361af94",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -410,7 +410,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "c88b02c38faae7ce5711a4f6ee744b53.jpg",
+    "file": "c88b02c38faae7ce5711a4f6ee744b53.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=c88b02c38faae7ce5711a4f6ee744b53&annotation=c88b02c38faae7ce5711a4f6ee744b53",
     "sha256": "232d9ecfa267d8d0c11ea81f33eae7f92e900a81d4fa191763fe8b9aa74bf9ff",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -423,7 +423,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "2c7588b7b05db64fe090d4a566f32d9b.jpg",
+    "file": "2c7588b7b05db64fe090d4a566f32d9b.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=2c7588b7b05db64fe090d4a566f32d9b&annotation=2c7588b7b05db64fe090d4a566f32d9b",
     "sha256": "776b17c2bfd0fcdc3751985d93723f70c54e124269948a25607c4331b8e01f86",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -462,7 +462,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "06baaef2e6de5caeac637383a1929913.jpg",
+    "file": "06baaef2e6de5caeac637383a1929913.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=06baaef2e6de5caeac637383a1929913&annotation=06baaef2e6de5caeac637383a1929913",
     "sha256": "3c0edf908bbadb85f97025927bd2f96251e62be24f4b29a876945699c3aee678",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -475,7 +475,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "4863c1020bb888e7cec2d89eb605b539.jpg",
+    "file": "4863c1020bb888e7cec2d89eb605b539.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=4863c1020bb888e7cec2d89eb605b539&annotation=4863c1020bb888e7cec2d89eb605b539",
     "sha256": "a83e4fdf24ec338618168c1da243e416e3dad7d0121aff4d1ede4f7a4131d25c",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -488,7 +488,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "67d60630bbc1326f2eb83496499f104c.jpg",
+    "file": "67d60630bbc1326f2eb83496499f104c.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=67d60630bbc1326f2eb83496499f104c&annotation=67d60630bbc1326f2eb83496499f104c",
     "sha256": "ee882735bafa55ce39da4948eb1f44cb46bc6d2cb6b5d5238357a667fd5e42cc",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -514,7 +514,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "51e2d9a34471ee4d47a9953ac35d89fd.jpg",
+    "file": "51e2d9a34471ee4d47a9953ac35d89fd.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=51e2d9a34471ee4d47a9953ac35d89fd&annotation=51e2d9a34471ee4d47a9953ac35d89fd",
     "sha256": "2fd3f473d4200bdde0992153ff0b21034e434dc3ebbe82d993ba9d3846cbb598",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -527,7 +527,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "354df724fa1e44c6af4bfa615da89132.png",
+    "file": "354df724fa1e44c6af4bfa615da89132.png.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=d668b59229374eeb76912cf455d00c81&annotation=354df724fa1e44c6af4bfa615da89132",
     "sha256": "69f7c8c17118c7e6a53e47db8cf3718165c4eed61024c9566c2cb79aca61ea9a",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -540,7 +540,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "889ca8016e1284dc34b94570a32f05bf.jpg",
+    "file": "889ca8016e1284dc34b94570a32f05bf.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=889ca8016e1284dc34b94570a32f05bf&annotation=889ca8016e1284dc34b94570a32f05bf",
     "sha256": "9abedc8f6a789ce9da22cb979b0fb52f8eac61b2c9f60cce63dc418242e06144",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -553,7 +553,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "7c3e89f558384effad90561104797299.png",
+    "file": "7c3e89f558384effad90561104797299.png.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=1479f7ceb4a0e410a0eafd8487a30a5e&annotation=7c3e89f558384effad90561104797299",
     "sha256": "16e7619def728d47a27ee8be761bacf001a6ee873e5a597f25e4a1401e0a104d",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -566,7 +566,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "d1ece63dd20247988d72914f28ba026d.png",
+    "file": "d1ece63dd20247988d72914f28ba026d.png.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=d01e7a18bf5f0d8ba78ec8b8bf22ec76&annotation=d1ece63dd20247988d72914f28ba026d",
     "sha256": "6e5925e528d967d821584ed4ea0fa14b8236dd36c950664ce9d931c185507147",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -579,7 +579,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "1131fd2d69c2d3adc036df6602b1a258.jpg",
+    "file": "1131fd2d69c2d3adc036df6602b1a258.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=1131fd2d69c2d3adc036df6602b1a258&annotation=1131fd2d69c2d3adc036df6602b1a258",
     "sha256": "7c7b996b5e6946dbcfe31a51642985becdf9d13baebdb21666f877e6d9c33952",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -592,7 +592,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "5e45b513dbc4e8654575da7aa023b168.jpg",
+    "file": "5e45b513dbc4e8654575da7aa023b168.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=5e45b513dbc4e8654575da7aa023b168&annotation=5e45b513dbc4e8654575da7aa023b168",
     "sha256": "a2e340548f91b265a3307325500adff3284556c276dbbfb6b2de924890a889d7",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -605,7 +605,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "ad7746c18d4ff05a840ef95e201b4d00.jpg",
+    "file": "ad7746c18d4ff05a840ef95e201b4d00.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=ad7746c18d4ff05a840ef95e201b4d00&annotation=ad7746c18d4ff05a840ef95e201b4d00",
     "sha256": "9d03e469d516103f03b1db7fa26a68668e401be86ab70f4cf5a159abf4536a5b",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -618,7 +618,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "19c5bad5463067c888ffcdea6b638d97.jpg",
+    "file": "19c5bad5463067c888ffcdea6b638d97.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=19c5bad5463067c888ffcdea6b638d97&annotation=19c5bad5463067c888ffcdea6b638d97",
     "sha256": "0cbf625532d8a931fa320424d18e9f8291a608dd391108e3423683049ac53ec9",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -631,7 +631,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "9b052c3624abb107c0d3abe354f88935.jpg",
+    "file": "9b052c3624abb107c0d3abe354f88935.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=9b052c3624abb107c0d3abe354f88935&annotation=9b052c3624abb107c0d3abe354f88935",
     "sha256": "63cf6be5bb3ba27624e30b10db4bc652c37c621c70f65371906cbd405203a36c",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -644,7 +644,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "8383d50084e248b993e4695b29183f01.png",
+    "file": "8383d50084e248b993e4695b29183f01.png.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=e56c0b86062e589de34842f9683e8ab9&annotation=8383d50084e248b993e4695b29183f01",
     "sha256": "b6e4bd92b2cf1966e0b97a3b4beb54b82204a3ba8fd7e210c8bce6e4d43f552c",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -657,7 +657,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "572603e09a86a42c5523cddbbee81c07.jpg",
+    "file": "572603e09a86a42c5523cddbbee81c07.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=572603e09a86a42c5523cddbbee81c07&annotation=572603e09a86a42c5523cddbbee81c07",
     "sha256": "da176adf35f38c100bd144fe528074ab9aaa28cb2d7618e2fdeb963ef84bde51",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -683,7 +683,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "bc2942db048d5b11c93726309fdf504e.jpg",
+    "file": "bc2942db048d5b11c93726309fdf504e.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=bc2942db048d5b11c93726309fdf504e&annotation=bc2942db048d5b11c93726309fdf504e",
     "sha256": "7240f180453035d4bfe306f83b4e4d80eb554589139d7eb384fb8b32d199b667",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -709,7 +709,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "fad99f53e8853cdd2803e7d6c2f8ce88.jpg",
+    "file": "fad99f53e8853cdd2803e7d6c2f8ce88.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=fad99f53e8853cdd2803e7d6c2f8ce88&annotation=fad99f53e8853cdd2803e7d6c2f8ce88",
     "sha256": "3e5338804b25695554e8ddacd64d1313ffa3c6d04548e935f8e6559509fb86e7",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -878,7 +878,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "025d5fdbeb2b20ba518a76ce19a49023.jpg",
+    "file": "025d5fdbeb2b20ba518a76ce19a49023.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=025d5fdbeb2b20ba518a76ce19a49023&annotation=025d5fdbeb2b20ba518a76ce19a49023",
     "sha256": "d3a028c6acbc82aa529803375f290b97ca37760b3259416f71887491508acecf",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -1008,7 +1008,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "617cb7ac548db969f4ff07fa16a9bd6f.jpg",
+    "file": "617cb7ac548db969f4ff07fa16a9bd6f.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=617cb7ac548db969f4ff07fa16a9bd6f&annotation=617cb7ac548db969f4ff07fa16a9bd6f",
     "sha256": "f9eb36cf2929ac374c8869c2f1e95659ddf8e7db6d9fdf2c8ec274d76cd89498",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -1073,7 +1073,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "cf1b2601b716e46621d3c6632718ec37.jpg",
+    "file": "cf1b2601b716e46621d3c6632718ec37.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=cf1b2601b716e46621d3c6632718ec37&annotation=cf1b2601b716e46621d3c6632718ec37",
     "sha256": "5f850e6ba65c13a4cc593ea4dd0fbfce69f94aad250f1be959c0ee1b08561374",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -1099,7 +1099,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "2b99ee07139c5a24b67cbcc38589a70f.jpg",
+    "file": "2b99ee07139c5a24b67cbcc38589a70f.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=2b99ee07139c5a24b67cbcc38589a70f&annotation=2b99ee07139c5a24b67cbcc38589a70f",
     "sha256": "41d8a0cd28020890de457d71d3426ec122dc435dd092d665b1e98f9f4e390125",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -1125,7 +1125,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "5b67aab5fd7f40513550c0c92161af43.jpg",
+    "file": "5b67aab5fd7f40513550c0c92161af43.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=5b67aab5fd7f40513550c0c92161af43&annotation=5b67aab5fd7f40513550c0c92161af43",
     "sha256": "fc583742c4fba5137b68f0614135498b8f25b82593fea8eff403177a111b0c2b",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -1138,7 +1138,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "d8f257e00c436af4bbff11b67cc6a8d6.jpg",
+    "file": "d8f257e00c436af4bbff11b67cc6a8d6.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=d8f257e00c436af4bbff11b67cc6a8d6&annotation=d8f257e00c436af4bbff11b67cc6a8d6",
     "sha256": "52a02a501a2023f5be1837326cb0334fdbb7200819a5e776c77307664cb282da",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -1151,7 +1151,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "76e1039f182b9d0af365cff23fa4c243.jpg",
+    "file": "76e1039f182b9d0af365cff23fa4c243.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=76e1039f182b9d0af365cff23fa4c243&annotation=76e1039f182b9d0af365cff23fa4c243",
     "sha256": "cd6f992a6115f584e7fb4b5480dbe9bf4e5aedd019f818a3a2e9a81c3acfde5e",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."

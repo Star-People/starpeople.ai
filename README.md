@@ -25,3 +25,26 @@ Open http://127.0.0.1:8787/. The setup guide is `/join.html`; image and asset at
 The foundation is [glenn-sorrentino/design-system](https://github.com/glenn-sorrentino/design-system), reference commit `f89ec1a`. Existing source credits are retained in `dist/credits.html`.
 
 This is the website repository. Field Station capture software, model training, and production data pipelines remain in their respective repositories. GitHub Pages publishes `dist/` to https://starpeople.ai after changes to `main`. The workflow uses GitHub-hosted runners; DNS remains managed at Njalla.
+
+## Model leaderboard
+
+The public table and `dist/assets/model-comparison.json` are generated together
+from the latest completed four-model Field Station comparison. They show a dated
+training-set comparison, not live or held-out accuracy. Refresh before publishing:
+
+```sh
+python3 scripts/update-leaderboard.py /path/to/observation-metrics-export.json
+```
+
+The script validates equal evaluation populations, derives metrics from confusion
+matrices, and ranks the weighted harmonic score with shared ranks for ties.
+Only aggregate scores, model hashes, and settings revisions are published; keep
+raw API exports outside this repository. A new export must be committed and
+deployed for the public snapshot to change.
+
+## Image delivery
+
+Background photographs use resized WebP assets with smaller mobile variants.
+Detection crops retain their original pixel dimensions and use lossless WebP
+only when smaller than the original. The archive video loads and plays only
+when visible, and stays paused for reduced-motion preferences.

@@ -17,9 +17,19 @@ document.querySelectorAll("img").forEach(img => { let attempts = 0; const retry 
 const archiveLoop=document.querySelector('.archive-loop');
 if(archiveLoop){
  const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
- const visibility=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting&&!reducedMotion.matches)archiveLoop.play().catch(()=>{});else archiveLoop.pause();}},{threshold:.15});
- if(reducedMotion.matches){archiveLoop.removeAttribute('autoplay');archiveLoop.pause();}
+ let visible=false,loaded=false;
+ const syncPlayback=()=>{
+  if(!visible||document.hidden||reducedMotion.matches){archiveLoop.pause();return;}
+  if(!loaded){
+   archiveLoop.querySelectorAll('source[data-src]').forEach(source=>{source.src=source.dataset.src;});
+   archiveLoop.load();loaded=true;
+  }
+  archiveLoop.play().catch(()=>{});
+ };
+ const visibility=new IntersectionObserver(entries=>{for(const entry of entries){visible=entry.isIntersecting;syncPlayback();}},{threshold:.15});
  visibility.observe(archiveLoop);
+ reducedMotion.addEventListener('change',syncPlayback);
+ document.addEventListener('visibilitychange',syncPlayback);
 }
 
 if(archiveLoop){

@@ -7,7 +7,7 @@
     "human_reviewed": true,
     "starred": true,
     "archive_url": "https://archive.org/details/ufo-files-station-1fe259-20261109t055133z-704e15",
-    "file": "0c14f8e766a24e9bbcb456b9855ac623.png",
+    "file": "0c14f8e766a24e9bbcb456b9855ac623.png.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=f721ee43f95bd941c22998ea156bb55d&annotation=0c14f8e766a24e9bbcb456b9855ac623",
     "sha256": "34f60a3e056bc62f5eda0993863e4a0e114e90f28fe0a0e38e3544317333a784",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -20,7 +20,7 @@
     "human_reviewed": true,
     "starred": false,
     "archive_url": null,
-    "file": "2b99ee07139c5a24b67cbcc38589a70f.jpg",
+    "file": "2b99ee07139c5a24b67cbcc38589a70f.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=2b99ee07139c5a24b67cbcc38589a70f&annotation=2b99ee07139c5a24b67cbcc38589a70f",
     "sha256": "41d8a0cd28020890de457d71d3426ec122dc435dd092d665b1e98f9f4e390125",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph.",
@@ -54,7 +54,7 @@
     "description": "Four colored lights in a curved arrangement"
   },
   {
-    "file": "93f4668927ffe960ada268c264e43517.jpg",
+    "file": "93f4668927ffe960ada268c264e43517.jpg.webp",
     "sample_id": "93f4668927ffe960ada268c264e43517",
     "video_id": "93f4668927ffe960ada268c264e43517",
     "source_endpoint": "/api/labeled-image?source=review&id=93f4668927ffe960ada268c264e43517&annotation=93f4668927ffe960ada268c264e43517",
@@ -71,7 +71,7 @@
     "human_reviewed": true,
     "starred": true,
     "archive_url": "https://archive.org/details/ufo-files-station-1fe259-20261109t055133z-704e15",
-    "file": "94194a09c68b456b9629a52561f4ff9c.png",
+    "file": "94194a09c68b456b9629a52561f4ff9c.png.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=f721ee43f95bd941c22998ea156bb55d&annotation=94194a09c68b456b9629a52561f4ff9c",
     "sha256": "23afc5157bb88be047e93548834f88d1b6f375bf1adf2f4553104c07bdb34ad7",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -84,13 +84,13 @@
     "human_reviewed": true,
     "starred": true,
     "archive_url": "https://archive.org/details/ufo-files-station-1fe259-20261109t055133z-704e15",
-    "file": "a8ec8c7d311e434cbf78de8b9fc77769.png",
+    "file": "a8ec8c7d311e434cbf78de8b9fc77769.png.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=f721ee43f95bd941c22998ea156bb55d&annotation=a8ec8c7d311e434cbf78de8b9fc77769",
     "sha256": "84390775ba1a2ad92f16194b5e7c1e58150ac2eb3b3b17c184b0a9d3b3fbf5e1",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
   },
   {
-    "file": "b1754a2f4eda4bcab85703e1e0460540.png",
+    "file": "b1754a2f4eda4bcab85703e1e0460540.png.webp",
     "sample_id": "b1754a2f4eda4bcab85703e1e0460540",
     "video_id": "f721ee43f95bd941c22998ea156bb55d",
     "source_endpoint": "/api/labeled-image?source=review&id=f721ee43f95bd941c22998ea156bb55d&annotation=b1754a2f4eda4bcab85703e1e0460540",
@@ -107,7 +107,7 @@
     "human_reviewed": true,
     "starred": true,
     "archive_url": "https://archive.org/details/ufo-files-station-1fe259-20261109t055638z-c567e4",
-    "file": "b3af6f469cb80770aa58e5b0e0005f35.jpg",
+    "file": "b3af6f469cb80770aa58e5b0e0005f35.jpg.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=b3af6f469cb80770aa58e5b0e0005f35&annotation=b3af6f469cb80770aa58e5b0e0005f35",
     "sha256": "9f60cbcad2d691681a031f6c3b8b67537440e6f02974bae772f90e4b3cffe689",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
@@ -134,7 +134,7 @@
     "human_reviewed": true,
     "starred": true,
     "archive_url": "https://archive.org/details/ufo-files-station-1fe259-20261109t055133z-704e15",
-    "file": "ff8ea9f26c4546a2bdb14450750669e2.png",
+    "file": "ff8ea9f26c4546a2bdb14450750669e2.png.webp",
     "source_endpoint": "/api/labeled-image?source=review&id=f721ee43f95bd941c22998ea156bb55d&annotation=ff8ea9f26c4546a2bdb14450750669e2",
     "sha256": "903bca4d648c36424eca827e459d9703bab664b897e131b7d127c745612e8aab",
     "treatment": "Unmodified review image bytes; CSS display scaling. Hero uses CSS screen blending over a separate sky photograph."
