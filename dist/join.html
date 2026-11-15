@@ -11,8 +11,8 @@
 </div></section>
 <section class="setup-section" aria-labelledby="codex-title"><p class="eyebrow">02 / Install Codex on the station</p><h2 id="codex-title">Let Codex handle the setup.</h2><p>Install <a class="text-link" href="https://developers.openai.com/codex/app/" target="_blank" rel="noopener">Codex for macOS ↗</a> on the same Mac you connected the hardware to. Sign in, open a project folder on an external SSD, and start a conversation with this prompt. Stay nearby to approve macOS permissions.</p>
 <div class="setup-prompt"><div class="prompt-toolbar"><span>Field Station setup prompt</span><button type="button" id="copyPrompt">Copy prompt</button></div><pre id="setupPrompt">Set up this Mac as the field server for the Star People rig below, using:
-https://github.com/ufo-files/field-station
-https://github.com/ufo-files/anomaly-vision-model
+https://github.com/Star-People/field-station
+https://github.com/Star-People/anomaly-vision-model
 
 Target hardware: M6 field Mac mini (16 GB); full-spectrum Kolari Canon R100 with Pro AR/AS coating, Kolari EF–EOS R Clear drop-in adapter, Canon EF 100–400mm f/4.5–5.6L IS USM; Cam Link 4K; Samsung T7 1 TB buffer and T7 2 TB backlog; two HackRF Ones with Nooelec 1.62 GHz Iridium patch antennas. HQ uses a separate M6 Mac mini (24 GB) with external archive, training, work, and backup volumes. Confirm the actual devices rather than assuming names or ports.
 
@@ -27,5 +27,5 @@ Configure the current web interface and required workers as persistent services 
 Configure the two HackRF receivers by serial number for receive-only spectrum monitoring, using the repository’s narrow L-band and wide-sweep roles. Account for the patch antennas’ limited useful bandwidth when presenting wide-sweep results. Keep RF transmission disabled. Set up HQ replication once I provide access to my HQ Mac: anomalous evidence packages go to its archive volume, training frames and models to its training volume, with a verified second copy on its backup volume. Keep collection working offline and retry sync on reconnection. Do not delete the field copy before verifying the destination checksum; preserve manual and human-reviewed anomalous recordings. Do not assume a shared folder or transport is already configured. Leave public Internet Archive uploads and YouTube streaming disabled until I supply my own accounts and authorize publication. Do not reuse another station&#x27;s credentials or publish my location or recordings.
 
 Verify a live camera image, a playable test recording, model classification, a saved human review, correct external storage paths, and service restart recovery. Clean up only the disposable test artifacts you created. Give me the local web URL and a concise report of what works and any remaining blockers. Do not claim this enrolls the station in a global network unless the repository actually provides a working enrollment service.</pre><p id="copyStatus" role="status" aria-live="polite"></p></div>
-<p class="setup-source">Based on the <a href="https://github.com/ufo-files/field-station">Field Station</a> and <a href="https://github.com/ufo-files/anomaly-vision-model">Anomaly Vision Model</a> repositories.</p></section></main>
+<p class="setup-source">Based on the <a href="https://github.com/Star-People/field-station">Field Station</a> and <a href="https://github.com/Star-People/anomaly-vision-model">Anomaly Vision Model</a> repositories.</p></section></main>
 <script src="app.js"></script><script src="setup.js"></script></body></html>
