@@ -24,4 +24,4 @@ Open http://127.0.0.1:8787/. The setup guide is `/join.html`; image and asset at
 
 The foundation is [glenn-sorrentino/design-system](https://github.com/glenn-sorrentino/design-system), reference commit `f89ec1a`. Existing source credits are retained in `dist/credits.html`.
 
-This is the website repository. Field Station capture software, model training, and production data pipelines remain in their respective repositories. Creating this repository does not configure hosting or change the starpeople.ai domain.
+This is the website repository. Field Station capture software, model training, and production data pipelines remain in their respective repositories. GitHub Pages publishes `dist/` to https://starpeople.ai after changes to `main`. The workflow uses GitHub-hosted runners; DNS remains managed at Njalla.
