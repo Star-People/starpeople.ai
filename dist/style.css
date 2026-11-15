@@ -151,3 +151,5 @@ main{width:100%;max-width:none}section{display:block;align-items:normal;padding:
 .credits-page p a{font-size:inherit;line-height:inherit}
 .project-link{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:760px){.archive-section{padding-top:64px}.credits-page h1{font-size:42px!important}}
+
+.archive-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;border:1px solid #ffffff80;border-radius:6px;background:#252830e6;color:white;padding:12px 18px;white-space:nowrap;font:16px var(--font-sans);display:flex;align-items:center;gap:16px}.archive-play[hidden]{display:none}.archive-play:focus-visible{outline:3px solid var(--lime);outline-offset:4px}
