@@ -17,30 +17,19 @@ document.querySelectorAll("img").forEach(img => { let attempts = 0; const retry 
 const archiveLoop=document.querySelector('.archive-loop');
 if(archiveLoop){
  const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
- const playButton=document.querySelector('.archive-play');
- let visible=false,loaded=false,requested=false;
- const load=()=>{
-  if(loaded)return;
-  archiveLoop.muted=true;
-  archiveLoop.querySelectorAll('source[data-src]').forEach(source=>{source.src=source.dataset.src;});
-  archiveLoop.load();loaded=true;
- };
- const play=()=>{
-  load();
-  archiveLoop.play().catch(()=>{if(visible)playButton.hidden=false;});
- };
+ archiveLoop.muted=true;
+ // The HTML source and native controls work independently of this enhancement.
  const syncPlayback=()=>{
-  if(!visible||document.hidden){archiveLoop.pause();return;}
-  if(reducedMotion.matches&&!requested){archiveLoop.pause();playButton.hidden=false;return;}
-  play();
+  if(document.hidden||reducedMotion.matches){archiveLoop.pause();return;}
+  const rect=archiveLoop.getBoundingClientRect();
+  if(rect.bottom>0&&rect.top<innerHeight)archiveLoop.play().catch(()=>{});
  };
- playButton.addEventListener('click',()=>{requested=true;play();});
- archiveLoop.addEventListener('playing',()=>{playButton.hidden=true;});
- archiveLoop.addEventListener('pause',()=>{if(visible)playButton.hidden=false;});
- const visibility=new IntersectionObserver(entries=>{for(const entry of entries){visible=entry.isIntersecting;syncPlayback();}},{threshold:0});
- visibility.observe(archiveLoop);
- reducedMotion.addEventListener('change',()=>{requested=false;syncPlayback();});
+ if(reducedMotion.matches)archiveLoop.pause();
+ new IntersectionObserver(entries=>{
+  if(entries.some(entry=>entry.isIntersecting))syncPlayback();
+ }).observe(archiveLoop);
  document.addEventListener('visibilitychange',syncPlayback);
+ reducedMotion.addEventListener('change',syncPlayback);
 }
 
 if(archiveLoop){
