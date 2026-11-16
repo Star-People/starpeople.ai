@@ -2,11 +2,6 @@
   const system=document.querySelector('.observation-system');if(!system)return;
   const canvas=system.querySelector('.flow-canvas'),svg=system.querySelector('.flow-wires'),paths=system.querySelector('#network-paths');
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-  const copy={
-    capture:['At the station','Camera frames are screened for motion and classified locally. Connected stations contribute detections and context. Original video stays local; offline captures queue for later sync.'],
-    review:['Across the network','Operators and collaborators inspect detections, compare context, and correct labels. Every human review stays connected to its source observation.'],
-    learn:['Back to the observers','Confirmed anomalies become public evidence. All reviewed labels can inform training. Models are evaluated and published as versions that station operators can adopt.']
-  };
   function rect(el){const r=el.getBoundingClientRect(),c=canvas.getBoundingClientRect();return {x:r.left-c.left,y:r.top-c.top,w:r.width,h:r.height,cx:r.left-c.left+r.width/2,cy:r.top-c.top+r.height/2}}
   const box=id=>rect(document.getElementById(id));
   function node(tag,attrs){const e=document.createElementNS('http://www.w3.org/2000/svg',tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v);paths.append(e);return e}
@@ -38,7 +33,7 @@
       wire(`M${model.cx},${model.y+model.h} V${back.cy-10} Q${model.cx},${back.cy} ${model.cx-10},${back.cy} H16 Q8,${back.cy} 8,${back.cy-8} V${top+8} Q8,${top} 16,${top} H${left-3}`,'learn');arrow(left-3,top,'right','learn');
     }
   }
-  system.querySelectorAll('[data-flow]').forEach(button=>button.addEventListener('click',()=>{system.dataset.stage=button.dataset.flow;system.querySelectorAll('[data-flow]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));const [title,text]=copy[button.dataset.flow];document.getElementById('flow-detail-label').textContent=title;document.getElementById('flow-detail-text').textContent=text;draw()}));
+  system.querySelectorAll('[data-flow]').forEach(button=>button.addEventListener('click',()=>{system.dataset.stage=button.dataset.flow;system.querySelectorAll('[data-flow]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));draw()}));
   let queued=false,visible=false;const schedule=()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;draw();syncMotion()})};
   function syncMotion(){if(visible&&!document.hidden&&!reduced.matches)svg.unpauseAnimations();else svg.pauseAnimations()}
   new ResizeObserver(schedule).observe(canvas);new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;syncMotion()}).observe(canvas);document.addEventListener('visibilitychange',syncMotion);reduced.addEventListener('change',schedule);document.fonts.ready.then(schedule);window.addEventListener('resize',schedule);draw();
