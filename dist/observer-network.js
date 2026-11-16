@@ -1,13 +1,45 @@
 (()=>{
- const system=document.querySelector('.observation-system');if(!system)return;
- const canvas=system.querySelector('.flow-canvas'),svg=system.querySelector('.flow-wires'),paths=system.querySelector('#network-paths');
- const copy={capture:['At the station','Camera frames are screened for motion, then classified locally. Connected stations share detections and context—not a continuous upload of every original video. Captures can continue offline and sync later.'],review:['Across the network','Operators and collaborators inspect detections, compare context, and correct labels. A machine flag is a request for review. Human decisions remain connected to the original observation.'],learn:['Back into the network','Human-confirmed anomalies are published with their evidence. Both anomalous and non-anomalous reviews contribute training examples. Models are evaluated and published as versions that station operators can adopt.']};
- function box(id){const r=document.getElementById(id).getBoundingClientRect(),c=canvas.getBoundingClientRect();return {x:r.left-c.left,y:r.top-c.top,w:r.width,h:r.height,cx:r.left-c.left+r.width/2,cy:r.top-c.top+r.height/2}}
- function wire(d,stage,extra=''){const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',d);p.setAttribute('class','flow-wire '+extra+(system.dataset.stage===stage?' is-active':''));paths.append(p);if(system.dataset.stage===stage&&!extra.includes('is-offline')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){const dot=document.createElementNS('http://www.w3.org/2000/svg','circle'),motion=document.createElementNS('http://www.w3.org/2000/svg','animateMotion');dot.setAttribute('r','2.5');dot.setAttribute('class','flow-packet');motion.setAttribute('path',d);motion.setAttribute('dur',stage==='learn'?'5s':'3s');motion.setAttribute('repeatCount','indefinite');dot.append(motion);paths.append(dot)}}
- function draw(){const w=canvas.clientWidth,h=canvas.clientHeight;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);paths.replaceChildren();const stations=[0,1,2].map(i=>box('observer-'+i)),shared=box('shared-review'),archive=box('network-archive'),model=box('network-model'),back=box('model-return');
-  if(innerWidth>900){stations.forEach((n,i)=>{const endY=shared.y+70+i*55,mid=(n.x+n.w+shared.x)/2;wire(`M${n.x+n.w},${n.cy} C${mid},${n.cy} ${mid},${endY} ${shared.x-4},${endY}`,'capture',i===2?'is-offline':'')});[archive,model].forEach((n,i)=>{const sy=shared.y+shared.h-(i?22:64),mid=(shared.x+shared.w+n.x)/2;wire(`M${shared.x+shared.w},${sy} C${mid},${sy} ${mid},${n.cy} ${n.x-4},${n.cy}`,'review')});wire(`M${model.cx},${model.y+model.h} V${back.cy-10} Q${model.cx},${back.cy} ${model.cx-10},${back.cy} H22 Q12,${back.cy} 12,${back.cy-10} V${stations[0].cy}`,'learn','is-feedback');stations.forEach(n=>wire(`M12,${n.cy} H${n.x-4}`,'learn','is-feedback'));
-  }else{const mergeY=shared.y-34;stations.forEach((n,i)=>wire(`M${n.cx},${n.y+n.h} V${mergeY-8} Q${n.cx},${mergeY} ${n.cx+(n.cx<shared.cx?8:-8)},${mergeY} H${shared.cx} V${shared.y-5}`,'capture',i===2?'is-offline':''));const splitY=archive.y-18;[archive,model].forEach((n,i)=>{if(innerWidth<=480&&i===1){wire(`M${shared.x+shared.w},${shared.y+shared.h-24} H${w-6} V${n.cy} H${n.x+n.w+4}`,'review');return}wire(`M${shared.cx},${shared.y+shared.h} V${splitY} H${n.cx} V${n.y-5}`,'review')});wire(`M${model.cx},${model.y+model.h} V${back.cy} H8 V${stations[0].cy} H${stations[0].x-4}`,'learn','is-feedback');}
- }
- system.querySelectorAll('[data-flow]').forEach(button=>button.addEventListener('click',()=>{system.dataset.stage=button.dataset.flow;system.querySelectorAll('[data-flow]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));const [title,text]=copy[button.dataset.flow];document.getElementById('flow-detail-label').textContent=title;document.getElementById('flow-detail-text').textContent=text;draw()}));
- let queued=false;const schedule=()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;draw()})};new ResizeObserver(schedule).observe(canvas);new IntersectionObserver(entries=>{if(entries[0].isIntersecting&&!document.hidden)svg.unpauseAnimations();else svg.pauseAnimations()}).observe(canvas);document.addEventListener('visibilitychange',()=>{if(document.hidden)svg.pauseAnimations();else if(canvas.getBoundingClientRect().bottom>0&&canvas.getBoundingClientRect().top<innerHeight)svg.unpauseAnimations()});document.fonts.ready.then(schedule);window.addEventListener('resize',schedule);draw();
+  const system=document.querySelector('.observation-system');if(!system)return;
+  const canvas=system.querySelector('.flow-canvas'),svg=system.querySelector('.flow-wires'),paths=system.querySelector('#network-paths');
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+  const copy={
+    capture:['At the station','Camera frames are screened for motion and classified locally. Connected stations contribute detections and context. Original video stays local; offline captures queue for later sync.'],
+    review:['Across the network','Operators and collaborators inspect detections, compare context, and correct labels. Every human review stays connected to its source observation.'],
+    learn:['Back to the observers','Confirmed anomalies become public evidence. All reviewed labels can inform training. Models are evaluated and published as versions that station operators can adopt.']
+  };
+  function rect(el){const r=el.getBoundingClientRect(),c=canvas.getBoundingClientRect();return {x:r.left-c.left,y:r.top-c.top,w:r.width,h:r.height,cx:r.left-c.left+r.width/2,cy:r.top-c.top+r.height/2}}
+  const box=id=>rect(document.getElementById(id));
+  function node(tag,attrs){const e=document.createElementNS('http://www.w3.org/2000/svg',tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v);paths.append(e);return e}
+  function wire(d,stage,{offline=false,packet=true}={}){
+    const active=system.dataset.stage===stage;
+    node('path',{d,class:'flow-wire'+(active?' is-active':'')+(offline?' is-offline':'')});
+    if(active&&packet&&!offline&&!reduced.matches){const dot=node('circle',{r:2.3,class:'flow-packet'}),motion=document.createElementNS('http://www.w3.org/2000/svg','animateMotion');motion.setAttribute('path',d);motion.setAttribute('dur',stage==='learn'?'6s':'3.5s');motion.setAttribute('repeatCount','indefinite');dot.append(motion)}
+  }
+  function port(x,y,stage){node('circle',{cx:x,cy:y,r:3,class:'flow-port'+(system.dataset.stage===stage?' is-active':'')})}
+  function arrow(x,y,dir,stage){const d=dir==='right'?`M${x-5},${y-3} L${x},${y} L${x-5},${y+3}`:dir==='left'?`M${x+5},${y-3} L${x},${y} L${x+5},${y+3}`:`M${x-3},${y-5} L${x},${y} L${x+3},${y-5}`;wire(d,stage,{packet:false})}
+  function draw(){
+    const w=canvas.clientWidth,h=canvas.clientHeight;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);paths.replaceChildren();
+    const stations=[0,1,2].map(i=>box('observer-'+i)),shared=box('shared-review'),film=rect(system.querySelector('.shared-frame-strip')),archive=box('network-archive'),model=box('network-model'),back=box('model-return'),review=rect(system.querySelector('.review-people'));
+    if(innerWidth>900){
+      const joinX=(stations[0].x+stations[0].w+shared.x)/2,joinY=film.cy;
+      stations.forEach((n,i)=>{wire(`M${n.x+n.w},${n.cy} C${joinX-18},${n.cy} ${joinX-18},${joinY} ${joinX},${joinY}`,'capture',{offline:i===2});port(n.x+n.w,n.cy,'capture')});
+      wire(`M${joinX},${joinY} H${shared.x-4}`,'capture');arrow(shared.x-4,joinY,'right','capture');
+      [archive,model].forEach((n,i)=>{const sy=review.cy,mid=(shared.x+shared.w+n.x)/2;wire(`M${shared.x+shared.w},${sy} C${mid},${sy} ${mid},${n.cy} ${n.x-4},${n.cy}`,'review');if(i===0)port(shared.x+shared.w,sy,'review');arrow(n.x-4,n.cy,'right','review')});
+      const bracketX=stations[0].x-12,top=stations[0].y+8,bottom=stations[2].y+stations[2].h-8,mid=(top+bottom)/2,rail=bracketX-14;
+      wire(`M${bracketX+5},${top} H${bracketX} V${bottom} H${bracketX+5}`,'learn',{packet:false});
+      wire(`M${model.cx},${model.y+model.h} V${back.cy-12} Q${model.cx},${back.cy} ${model.cx-12},${back.cy} H${rail+12} Q${rail},${back.cy} ${rail},${back.cy-12} V${mid+10} Q${rail},${mid} ${rail+10},${mid} H${bracketX-3}`,'learn');arrow(bracketX-3,mid,'right','learn');
+    }else{
+      const mergeY=shared.y-23;
+      stations.forEach((n,i)=>{const end=shared.cx;wire(`M${n.cx},${n.y+n.h} C${n.cx},${mergeY} ${end},${mergeY} ${end},${shared.y-5}`,'capture',{offline:i===2});port(n.cx,n.y+n.h,'capture')});arrow(shared.cx,shared.y-5,'down','capture');
+      const sy=shared.y+shared.h,splitY=archive.y-24;
+      [archive,model].forEach((n,i)=>{if(innerWidth<=360&&i===1){wire(`M${shared.x+shared.w},${review.cy} H${w-12} Q${w-7},${review.cy} ${w-7},${review.cy+5} V${n.cy-5} Q${w-7},${n.cy} ${w-12},${n.cy} H${n.x+n.w+4}`,'review');port(shared.x+shared.w,review.cy,'review');arrow(n.x+n.w+4,n.cy,'left','review');return}if(Math.abs(n.cx-shared.cx)<1){wire(`M${shared.cx},${sy} V${n.y-5}`,'review');arrow(n.cx,n.y-5,'down','review');return}wire(`M${shared.cx},${sy} V${splitY-8} Q${shared.cx},${splitY} ${shared.cx+(n.cx<shared.cx?-8:8)},${splitY} H${n.cx+(n.cx<shared.cx?8:-8)} Q${n.cx},${splitY} ${n.cx},${splitY+8} V${n.y-5}`,'review');arrow(n.cx,n.y-5,'down','review')});
+      const top=stations[0].y-10,left=stations[0].x,right=stations[2].x+stations[2].w;
+      wire(`M${left},${top+4} V${top} H${right} V${top+4}`,'learn',{packet:false});
+      wire(`M${model.cx},${model.y+model.h} V${back.cy-10} Q${model.cx},${back.cy} ${model.cx-10},${back.cy} H16 Q8,${back.cy} 8,${back.cy-8} V${top+8} Q8,${top} 16,${top} H${left-3}`,'learn');arrow(left-3,top,'right','learn');
+    }
+  }
+  system.querySelectorAll('[data-flow]').forEach(button=>button.addEventListener('click',()=>{system.dataset.stage=button.dataset.flow;system.querySelectorAll('[data-flow]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));const [title,text]=copy[button.dataset.flow];document.getElementById('flow-detail-label').textContent=title;document.getElementById('flow-detail-text').textContent=text;draw()}));
+  let queued=false,visible=false;const schedule=()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;draw();syncMotion()})};
+  function syncMotion(){if(visible&&!document.hidden&&!reduced.matches)svg.unpauseAnimations();else svg.pauseAnimations()}
+  new ResizeObserver(schedule).observe(canvas);new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;syncMotion()}).observe(canvas);document.addEventListener('visibilitychange',syncMotion);reduced.addEventListener('change',schedule);document.fonts.ready.then(schedule);window.addEventListener('resize',schedule);draw();
 })();
