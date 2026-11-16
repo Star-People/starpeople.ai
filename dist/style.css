@@ -193,3 +193,5 @@ footer{flex-wrap:wrap}footer>.license-link{font-size:12px;line-height:1.5;text-d
 @media(max-width:760px){.author-layout{grid-template-columns:1fr;gap:36px}.author-copy h2{margin-bottom:24px}.author-copy p{font-size:17px}.author-portrait{max-width:440px}.author-portrait figcaption{font-size:13px}}
 
 @media(max-width:760px){.author-photo{border-radius:150px 150px 8px 8px}}
+
+.live-network-player{position:relative}.live-network-player iframe[hidden],#live-status[hidden]{display:none}#live-status{display:grid;place-items:center;height:100%;padding:32px;text-align:center;color:#f8f7f2;font-size:18px}

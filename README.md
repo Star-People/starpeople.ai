@@ -56,3 +56,13 @@ preferences when JavaScript is available.
 Original UFO Files software is available under the **UFO Files Noncommercial Shared-Source License 1.0**: no commercial use; distributed derivatives and modified network services must provide corresponding source under the same terms. Original content is **CC BY-NC-SA 4.0**, only to the extent we control its rights.
 
 See [LICENSE](LICENSE), [LICENSE-CONTENT.txt](LICENSE-CONTENT.txt), and [LICENSING.md](LICENSING.md) for scope, exceptions, and the transition from prior grants. These are source-available terms, not an OSI-approved open-source license. Third-party materials and public-domain records retain their own status.
+
+## Current YouTube broadcast
+
+The homepage reads `https://raw.githubusercontent.com/starpeopleai/field-station/live-status/live.json`
+on load, every minute, and when a tab becomes visible. The independent HQ
+`ai.starpeople.live-broadcast-status` service polls the station every minute and
+publishes its confirmed broadcast ID. This does not wait for the detection dataset
+snapshot or a homepage deployment. The player and YouTube watch link update together;
+an unchanged ID does not reload playback. Status older than 15 minutes is not shown
+as live. Do not add video IDs to the HTML or restore the old `live-sessions.json` file.
