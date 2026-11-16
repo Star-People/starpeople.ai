@@ -1,9 +1,6 @@
 const menu=document.querySelector('.menu');
 menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation');document.querySelector('nav').classList.toggle('open',open);});
 document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>{menu.setAttribute('aria-expanded','false');document.querySelector('nav').classList.remove('open');}));
-const scenes=[['A rooftop.<br>A new perspective.','A permanently mounted camera watches its local sky. A small computer looks for motion and classifies what appears.'],['A backyard.<br>A shared curiosity.','An observer brings their own patch of sky into view. Local detections become something people can examine, review, and learn from.'],['Farther out.<br>Still connected.','A remote station brings another viewpoint. The vision: collect evidence locally, then share useful observations when a connection is available.']];
-document.querySelectorAll('[data-scene]').forEach(b=>b.addEventListener('click',()=>{const n=Number(b.dataset.scene);document.querySelector('#station-title').innerHTML=scenes[n][0];document.querySelector('#station-copy').textContent=scenes[n][1];document.querySelectorAll('[data-scene]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});document.querySelectorAll('[data-node]').forEach(x=>x.classList.toggle('selected',Number(x.dataset.node)===n));}));
-
 document.querySelectorAll('[data-detection]').forEach(button=>button.addEventListener('click',async()=>{
  const image=document.getElementById('heroDetection');const next=new Image();next.src=button.dataset.image;
  try{await next.decode();}catch{return;}
