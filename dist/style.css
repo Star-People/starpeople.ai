@@ -188,6 +188,8 @@ footer{flex-wrap:wrap}footer>.license-link{font-size:12px;line-height:1.5;text-d
 .author-copy p a{text-decoration:underline;text-underline-offset:3px;color:var(--ink)}
 .author-copy .button{margin-top:10px}
 .author-portrait{margin:0;min-width:0}
-.author-photo{display:block;width:100%;height:auto;margin:0;border-radius:12px}
+.author-photo{display:block;width:100%;height:auto;margin:0;border-radius:180px 180px 8px 8px}
 .author-portrait figcaption{font-size:14px;line-height:1.5;margin-top:14px;color:#50535b}
 @media(max-width:760px){.author-layout{grid-template-columns:1fr;gap:36px}.author-copy h2{margin-bottom:24px}.author-copy p{font-size:17px}.author-portrait{max-width:440px}.author-portrait figcaption{font-size:13px}}
+
+@media(max-width:760px){.author-photo{border-radius:150px 150px 8px 8px}}
