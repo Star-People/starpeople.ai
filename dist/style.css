@@ -179,3 +179,15 @@ footer{flex-wrap:wrap}footer>.license-link{font-size:12px;line-height:1.5;text-d
 .live-network .section-head{align-items:end;gap:24px}.live-network .section-head p{margin:16px 0 0}.live-network .text-link{white-space:nowrap}.live-network-player{aspect-ratio:16/9;background:#111;border-radius:16px;overflow:hidden}.live-network-player iframe{display:block;width:100%;height:100%;border:0}.live-network-note{font-size:15px;line-height:1.6;margin:18px 0 0;color:var(--muted,#645e6d)}.live-network-note a{color:inherit}@media(max-width:760px){.live-network .section-head{display:block}.live-network .section-head>.text-link{display:inline-flex;margin-top:18px}.live-network-player{border-radius:10px}}
 
 .live-network .section-head{display:flex;justify-content:space-between}@media(max-width:760px){.live-network .section-head{display:block}}
+
+/* Author biography restored from the UFO Files homepage. */
+.project-author{border-top:1px solid #deddd4}
+.author-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:start;max-width:1280px;margin:auto}
+.author-copy h2{font-size:clamp(36px,4vw,58px);margin:0 0 32px;max-width:650px}
+.author-copy p{font-size:18px;line-height:1.65;margin:0 0 22px;color:#50535b}
+.author-copy p a{text-decoration:underline;text-underline-offset:3px;color:var(--ink)}
+.author-copy .button{margin-top:10px}
+.author-portrait{margin:0;min-width:0}
+.author-photo{display:block;width:100%;height:auto;margin:0;border-radius:12px}
+.author-portrait figcaption{font-size:14px;line-height:1.5;margin-top:14px;color:#50535b}
+@media(max-width:760px){.author-layout{grid-template-columns:1fr;gap:36px}.author-copy h2{margin-bottom:24px}.author-copy p{font-size:17px}.author-portrait{max-width:440px}.author-portrait figcaption{font-size:13px}}
