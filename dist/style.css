@@ -129,7 +129,7 @@ main{width:100%;max-width:none}section{display:block;align-items:normal;padding:
 /* Complete vector lockup: symbol, optical spacing and lettering travel together. */
 .site-header .wordmark,footer .wordmark{display:block;flex:none;line-height:0;color:#252830}
 .wordmark img.brand-lockup{display:block;width:264px;height:auto;max-width:none;margin:0}
-.belief>.about-star-mark{mask-image:url("assets/brand/starpeople-mark.svg");-webkit-mask-image:url("assets/brand/starpeople-mark.svg")}
+.belief>.about-star-mark{mask-image:url("assets/brand/starpeople-mark.png?v=exception-1");-webkit-mask-image:url("assets/brand/starpeople-mark.png?v=exception-1")}
 @media(max-width:760px){.site-header{gap:16px}.wordmark img.brand-lockup{width:218px}.site-header .menu{min-width:0;flex-shrink:0;margin-left:auto}}
 @media(max-width:360px){.wordmark img.brand-lockup{width:188px}}
 
